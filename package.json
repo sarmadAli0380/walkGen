@@ -1,0 +1,25 @@
+{
+  "name": "viewmax-mcp",
+  "version": "0.1.0",
+  "description": "Backend-only MCP server that turns property room photos into an AI-generated video walkthrough (Kling via Replicate).",
+  "type": "module",
+  "bin": {
+    "viewmax-mcp": "src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "inspect": "npx @modelcontextprotocol/inspector node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "ffmpeg-static": "^5.2.0",
+    "ffprobe-static": "^3.1.0",
+    "image-size": "^2.0.0",
+    "replicate": "^1.0.1",
+    "zod": "^3.23.8"
+  }
+}
